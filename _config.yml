@@ -17,10 +17,10 @@ sidebar-avatar: /img/about-avatar.jpg      # use absolute URL, seeing it's used 
 
 # SNS settings
 RSS: false
-weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-twitter_username:   qiubaiying
+# weibo_username:     ootakemaru
+other_username:     ootakemaru
+github_username:    ootakemaru
+# twitter_username:   ootakemaru
 
 
 
