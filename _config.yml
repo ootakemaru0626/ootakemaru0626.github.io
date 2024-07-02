@@ -3,7 +3,7 @@ title: MADAO DIARY
 SEOTitle: MADAO-OOTAKEMARUWIFE
 header-img: img/post-bg-desk.jpg
 email: ootakemaru0626@gmail.com
-description: "Every failure is leading towards success."
+description: "愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。"
 keyword: "MADAO, OOTAKEMARU"
 url: "https://ootakemaru0626.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,8 +11,8 @@ github_repo: "https://github.com/ootakemaru0626/ootakemaru0626.github.io.git" # 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。"
+sidebar-avatar: /img/about-avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # SNS settings
