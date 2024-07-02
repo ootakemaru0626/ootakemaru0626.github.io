@@ -36,7 +36,7 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <!-- no hr -->
-                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
@@ -47,17 +47,6 @@ layout: default
         				{% endfor %}
         			</div>
                 </section>
-                {% endif %}
-
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
                 {% endif %}
             </div>
         {% else %}
@@ -85,7 +74,7 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
@@ -121,39 +110,32 @@ layout: default
                                     </span>
                                 </a>
                             </li>
-                            {% endif %}
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
-                            {% if site.jianshu_username %}
+                            {% endif %}                          
+                           
+<!--                             {% if site.twitter_username %}
                             <li>
-                                <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">简</i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.twitter_username %}
-                            <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}">
+                                <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                             </li>
-                            {% endif %}
-                            {% if site.zhihu_username %}
+                            {% endif %} 
+-->
+				
+                            {% if site.other_username %}
                             <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+                                <a target="_blank" href="{{ site.other_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                        <i class="fa  fa-stack-1x fa-inverse">O</i>
                                     </span>
                                 </a>
                             </li>
                             {% endif %}
-                            {% if site.weibo_username %}
+				
+<!--                             {% if site.weibo_username %}
                             <li>
                                 <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
                                     <span class="fa-stack fa-lg">
@@ -162,8 +144,10 @@ layout: default
                                     </span>
                                 </a>
                             </li>
-                            {% endif %}
-                            {% if site.facebook_username %}
+                            {% endif %} 
+-->
+				
+<!--                             {% if site.facebook_username %}
                             <li>
                                 <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
                                     <span class="fa-stack fa-lg">
@@ -173,6 +157,7 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
+-->
                             {% if site.github_username %}
                             <li>
                                 <a target="_blank" href="https://github.com/{{ site.github_username }}">
@@ -189,17 +174,7 @@ layout: default
                             <p>✉️ {{site.email}}</p>
                         {% endif %}
                     </div>
-                </section>
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                </section>               
     		</div>
         {% endif %}
 	</div>
